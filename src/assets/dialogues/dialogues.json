@@ -1,0 +1,40 @@
+{
+    "startScreen":"Hello player! Welcome to my game spot. To know the rules click the rules button or if you know what you are in for just \"Press Start\" to play!",
+    "gameStart":[
+        "Here we go! please guess the next number...",
+        "Your current number is ...",
+        "So what's your answer? remember that you can still take a hint."
+    ],
+    "revealAnswer":[
+        "So the next number was",
+        "So judging from your answer ..."
+    ],
+    "checkingAnswer":[
+        "You were RIGHT on the spot ...",
+        "Way to go!",
+        "They were the SAME!",
+        "No problem though. You won't loose anything.",
+        "Too bad you weren't right this time!",
+        "and do be careful ... you're LOOSING LIVES here!",
+        "guess it's game over!"
+    ],
+    "finalResult":{
+        "points":{
+            "lt_5":"That was really bad.",
+            "lt_10":"Nice Work! keep it up.",
+            "lt_25":"Ooh my! This was fun.",
+            "lt_50":"Half a century past!",
+            "lt_75":"Awesome work!",
+            "lt_100":"Be proud!",
+            "gt_100":"Be proud!"
+        },
+        "finalResponse":{
+            "below_avg":"Why don't you try your luck again?",
+            "average":"You're getting better at this.",
+            "mediocre":"Hang in there and do your best.",
+            "good":"It was nice seeing a player such as yourself!",
+            "excellent":"People rarely make it this far"
+        }
+    }
+
+}
