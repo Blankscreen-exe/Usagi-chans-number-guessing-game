@@ -23,7 +23,7 @@
     /* margin: auto; */
     width: 600px;
     z-index: 0;
-    background-image: url('./speechbubble.png') ;
+    background-image: url('/speechbubble.png') ;
     background-repeat: no-repeat;
     /* border: 3px solid green; */
   }

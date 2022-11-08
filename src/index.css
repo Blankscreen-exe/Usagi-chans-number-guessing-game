@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'appleii';
-  src: url('src/assets/fonts/appleii.TTF') format('truetype');
+  src: url('/fonts/appleii.ttf') format('truetype');
 }
 :root {
   font-family: 'appleii';

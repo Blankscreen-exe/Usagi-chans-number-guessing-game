@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: 'yoster' ;
-  src: url('src/assets/fonts/yoster.TTF');
+  src: url('/fonts/yoster.ttf');
 }
 
 #root {
