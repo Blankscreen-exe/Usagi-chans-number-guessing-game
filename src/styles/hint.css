@@ -1,0 +1,5 @@
+.hint-anchor:hover {
+    color:rgb(236, 93, 93);
+    text-decoration: underline;
+    cursor:help;
+}

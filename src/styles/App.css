@@ -1,0 +1,42 @@
+
+@import url("./avatar.css");
+@import url("./iobox.css");
+@import url("./navbar.css");
+@import url("./popup.css");
+@import url("./rules.css");
+@import url("./title.css");
+@import url("./stats.css");
+@import url("./hint.css");
+@import url("./result.css");
+@import url("./answerbuttons.css");
+@import url("./dashboard.css");
+
+
+
+@font-face {
+  font-family: 'yoster' ;
+  src: url('src/assets/fonts/yoster.TTF');
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* general font styles */
+.highlight {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.header-field {
+  font-family: yoster;
+  font-size: 19pt;
+  color:brown;
+}
+.data-field {
+  font-size: 17pt;
+  color:rgb(255, 98, 0);
+}

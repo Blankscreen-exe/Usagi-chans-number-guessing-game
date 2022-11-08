@@ -1,0 +1,20 @@
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+
+.hint-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0px;
+    margin: 15px auto;
+
+    border: 30px  solid;
+    border-image: url(/button_border.png) 20 round;
+    background-color: #d2bb8c;
+}
+.hint-field{
+    font-size: 17pt;
+}

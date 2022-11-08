@@ -1,0 +1,24 @@
+.title {
+    justify-content: center;
+  }
+  
+  .title > header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* min-width: 500px; */
+  }
+  
+  .title > header > h1 {
+    font-size: 55pt;
+  }
+  .title > header > h3 {
+    font-size: 30pt;
+  }
+  
+  .title  {
+    position: relative;
+  
+  }

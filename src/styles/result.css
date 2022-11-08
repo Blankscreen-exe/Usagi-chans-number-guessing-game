@@ -1,0 +1,36 @@
+.name-input-box[type=text] {
+    background-color: antiquewhite;
+    border: 0px;
+    padding: 10px;
+    font-size: 12pt;
+    font-family: appleii;
+}
+
+.name-input-box[type=text]:focus {
+    outline: none;
+}
+.reward-header-field{
+    font-size: 15px;
+}
+.reward-highlight {
+    color:orangered;
+}
+.reward-image {
+    width: 75px;
+}
+.reward-description {
+    font-size: 15px;
+}
+.save-record-text {
+    font-size: 15px;
+}
+.save-record-button {
+    font-size: 14pt;
+    padding: 5px 5px;
+    margin-left: 10px;
+}
+.play-again-button {
+    font-size: 14pt;
+    padding: 5px 5px;
+    margin-left: 10px;
+}

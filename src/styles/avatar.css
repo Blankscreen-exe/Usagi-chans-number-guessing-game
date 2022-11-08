@@ -1,0 +1,31 @@
+.avatar-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .speech-text {
+    /* position: absolute; */
+    /* padding: 10px; */
+    /* transform: translate(6%, -190%); */
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5%;
+    padding-right: 9%;
+    /* text-align: center; */
+    width: 480px;
+    z-index: 1;
+  }
+  .speech-box {
+    /* position: relative; */
+    text-align: center;
+    /* height: fit-content; */
+    /* margin: auto; */
+    width: 600px;
+    z-index: 0;
+    background-image: url('./speechbubble.png') ;
+    background-repeat: no-repeat;
+    /* border: 3px solid green; */
+  }
+  
+  

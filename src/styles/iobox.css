@@ -1,0 +1,45 @@
+.iobox {
+    /* background-color: aqua; */
+    position: relative;
+    font-size: 15pt;
+}
+.io-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 800px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.io-stats {
+    position: absolute;
+}
+
+.io-button {
+    border: 4px solid #e12407; 
+    box-shadow: 5px 5px 0px #891200; 
+    padding: 10px 20px;
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: yoster;
+    background-color: #ffd8d2;
+    cursor: pointer;
+  
+    /* border-image: url(/buttonborder.png) 30 round; */
+  
+    font-weight: bold;
+    color: #e12407;
+  
+  }
+  .io-button:hover {
+    background-color: #ff7a65;
+    border-color: #d42a10;
+    color: white;
+  }
+  .io-button:active{
+    box-shadow: 2px 2px 0px #891200;
+  }
+  .io-button:focus,
+  .io-button:focus-visible {
+    outline: 0px auto -webkit-focus-ring-color;
+  }

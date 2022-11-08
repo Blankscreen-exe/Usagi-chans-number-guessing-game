@@ -1,0 +1,22 @@
+.rules {
+    text-align: left;
+  }
+  .rules > h2 {
+    font-family: yoster;
+    font-weight: bold;
+    font-size: 24pt;
+    color: rgb(110, 27, 27);
+  }
+  .rules > ul > li::before {
+      content: "🥕 ";
+  }
+  .rules > ul > li {
+    
+    font-size: 11pt;
+  }
+  
+  .rules > ul {
+    padding-left: 0;
+    list-style-type: none;
+    
+  }
