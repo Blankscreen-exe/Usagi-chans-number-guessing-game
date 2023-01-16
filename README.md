@@ -1,7 +1,7 @@
 # Usagi San's ~ Number Guessing Game
 This is a number guessing game where the player will be given a number and they will have to guess if the next number will be **larger** or **smaller**. Based on their answer they will either get a point or loose a life.
 
-> You can view the deployed app [Here on Netlify](https://superlative-bunny-64511a.netlify.app/)
+> You can view the deployed app [Here on Netlify](https://usagichan-numbergame.netlify.app/)
 
 ## Rules For The Game
 ![Alt text](./docs/darules.png)
