@@ -25,6 +25,7 @@
     z-index: 0;
     background-image: url('/speechbubble.png') ;
     background-repeat: no-repeat;
+    color: #666666;
     /* border: 3px solid green; */
   }
   
