@@ -66,7 +66,7 @@ export default function Avatar(props) {
                 {/* <img src={speechBubble} className="speech-bubble"/> */}
                 <p className="mt-[5%] ml-auto mr-auto pl-[5%] pr-[9%] w-[480px] z-[1]">{dialogue}</p>
             </span>
-            <img src={image} className="avatar-img" />
+            <img src={image} />
         </div>
     )
 }

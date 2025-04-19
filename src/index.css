@@ -51,6 +51,22 @@
     border: 30px solid;
     border-image: url(/button_border.png) 20 round;
   }
+
+  .text-decoration-inherit {
+    text-decoration: inherit;
+  }
+}
+
+body {
+  @apply m-0 flex place-items-center min-w-80 min-h-screen bg-[#c5e9fc];
+}
+
+a {
+  @apply font-medium text-[#646cff] [text-decoration:inherit] hover:text-[#535bf2];
+}
+
+h1 {
+  @apply text-[3.2em] leading-[1.1];
 }
 
 /* @font-face {

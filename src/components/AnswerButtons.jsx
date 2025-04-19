@@ -24,7 +24,7 @@ export default function AnswerButtons(props) {
     }
 
     return (
-        <div className="answer-box">
+        <div>
             <p>Current Number: <span className="text-orange-600 font-bold underline">{props.numbers.currentNumber}</span></p>
             <p>The next number is going to be ...</p>
             <div className="flex justify-between w-[400px] m-auto">
