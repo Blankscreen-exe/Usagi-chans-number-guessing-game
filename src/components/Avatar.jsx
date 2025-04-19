@@ -20,7 +20,7 @@ export default function Avatar(props) {
             image = usagi_happy
             break;
         case 1: // game start
-            dialogue = `${dialogues.gameStart[0]} ${dialogues.gameStart[1]} ${props.numbers.currentNumber}. ${dialogues.gameStart[2]}` 
+            dialogue = `${dialogues.gameStart[0]} ${dialogues.gameStart[1]} ${props.numbers.currentNumber}. ${dialogues.gameStart[2]}`
             image = usagi_normal
             break;
         case 2: // reveal
@@ -28,15 +28,15 @@ export default function Avatar(props) {
             image = usagi_smug
             break;
         case 3: // check
-            dialogue = props.answerResult === 0 ? 
-            `${dialogues.checkingAnswer[2]} ${dialogues.checkingAnswer[3]}` : 
+            dialogue = props.answerResult === 0 ?
+                `${dialogues.checkingAnswer[2]} ${dialogues.checkingAnswer[3]}` :
                 props.answerResult === 1 ?
-                `${dialogues.checkingAnswer[0]} ${dialogues.checkingAnswer[1]}` :
-                `${dialogues.checkingAnswer[4]} ${livesLeft ? dialogues.checkingAnswer[5] : dialogues.checkingAnswer[6]}`
+                    `${dialogues.checkingAnswer[0]} ${dialogues.checkingAnswer[1]}` :
+                    `${dialogues.checkingAnswer[4]} ${livesLeft ? dialogues.checkingAnswer[5] : dialogues.checkingAnswer[6]}`
             image = props.answerResult === 0 ? usagi_normal : props.answerResult === 1 ? usagi_happy : usagi_sad
-            break;        
+            break;
         case 4: // result
-            
+
             if (props.playerData.points < 6) {
                 dialogue = `${dialogues.finalResult.points.lt_5} ${dialogues.finalResult.finalResponse.below_avg}`
             } else if (props.playerData.points <= 10) {
@@ -52,8 +52,8 @@ export default function Avatar(props) {
             } else if (props.playerData.points > 100) {
                 dialogue = `${dialogues.finalResult.points.gt_100} ${dialogues.finalResult.finalResponse.excellent}`
             }
-            
-            image = props.playerData.points > 5 ? usagi_happy : usagi_sad 
+
+            image = props.playerData.points > 5 ? usagi_happy : usagi_sad
             break;
         default:
             console.log("Error fetching dialogue")
@@ -61,12 +61,12 @@ export default function Avatar(props) {
     }
 
     return (
-        <div className="avatar-box">
-            <span className="speech-box">
+        <div className="flex justify-center pt-2.5">
+            <span className="text-center w-[600px] z-0 bg-[url('/speechbubble.png')] bg-no-repeat text-[#666666]">
                 {/* <img src={speechBubble} className="speech-bubble"/> */}
-                <p className="speech-text">{dialogue}</p>
+                <p className="mt-[5%] ml-auto mr-auto pl-[5%] pr-[9%] w-[480px] z-[1]">{dialogue}</p>
             </span>
-            <img src={image} className="avatar-img"/>
+            <img src={image} className="avatar-img" />
         </div>
     )
 }

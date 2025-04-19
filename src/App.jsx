@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 //importing styles
-import './styles/App.css'
+// import './styles/App.css'
 
 //loading components
 import Title from './components/Title'
@@ -28,8 +28,8 @@ function App() {
   })
   // stats for numbers 
   const [numbers, setNumbers] = useState({
-    currentNumber: Math.round(Math.random()*9),
-    nextNumber: Math.round(Math.random()*9)
+    currentNumber: Math.round(Math.random() * 9),
+    nextNumber: Math.round(Math.random() * 9)
   })
   // state for answers
   const [answer, setAnswer] = useState("")
@@ -37,12 +37,12 @@ function App() {
   //display hint
   const [displayHint, setDisplayHint] = useState(false)
 
-  function genNum(){
-    setNumbers((prevNumbers)=>{
+  function genNum() {
+    setNumbers((prevNumbers) => {
       return {
         ...prevNumbers,
         currentNumber: prevNumbers.nextNumber,
-        nextNumber: Math.round(Math.random()*9)
+        nextNumber: Math.round(Math.random() * 9)
       }
     })
   }
@@ -52,21 +52,21 @@ function App() {
       <Title />
       <div className='game-container'>
         <NavButtons />
-        <Avatar 
+        <Avatar
           gameState={gameState}
           numbers={numbers}
           playerData={playerData}
           answerResult={answerResult}
         />
-        <Stats 
+        <Stats
           playerData={playerData}
           numbers={numbers}
           gameState={gameState}
           displayHint={displayHint}
           setDisplayHint={setDisplayHint}
         />
-        <IObox 
-          gameState={gameState} 
+        <IObox
+          gameState={gameState}
           setGameState={setGameState}
           genNum={genNum}
           answer={answer}
@@ -78,7 +78,7 @@ function App() {
           setDisplayHint={setDisplayHint}
         />
       </div>
-      
+
     </div>
   )
 }

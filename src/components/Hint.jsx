@@ -10,6 +10,6 @@ export default function Hint(props) {
   }
 
   return (
-    <span className='header-field' onClick={showHint}>🥕 <span className='hint-anchor'>{props.displayHint && props.gameState === 1 ? "Hide Carrot" : "Need Carrot?"}</span></span>
+    <span className='font-[yoster] text-[19pt] text-[brown]' onClick={showHint}>🥕 <span className='hover:text-[#ec5d5d] hover:underline hover:cursor-help'>{props.displayHint && props.gameState === 1 ? "Hide Carrot" : "Need Carrot?"}</span></span>
   )
 }

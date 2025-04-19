@@ -35,12 +35,21 @@
     border-image: url(/button_border.png) 20 round;
   }
 
+  .popup-overlay {
+    background-color: #1a1a1abd;
+  }
+
   .btn-shadow {
     box-shadow: 5px 5px 0px #891200;
   }
 
   .btn-shadow:active {
     box-shadow: 2px 2px 0px #891200;
+  }
+
+  .hint-container-border {
+    border: 30px solid;
+    border-image: url(/button_border.png) 20 round;
   }
 }
 
