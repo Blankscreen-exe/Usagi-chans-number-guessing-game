@@ -1,9 +1,55 @@
+@import "tailwindcss";
+
 @font-face {
-  font-family: 'appleii';
-  src: url('/fonts/appleii.ttf') format('truetype');
+  font-family: 'Appleii';
+  src: url(/fonts/Appleii.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'yoster';
+  src: url(/fonts/yoster.ttf) format('truetype');
+}
+
+@layer base {
+  :root {
+    font-family: 'Appleii', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+}
+
+@layer utilities {
+  .nav-border {
+    border: 30px solid;
+    border-image: url(/button_border.png) 20 round;
+  }
+
+  .btn-shadow {
+    box-shadow: 5px 5px 0px #891200;
+  }
+
+  .btn-shadow:active {
+    box-shadow: 2px 2px 0px #891200;
+  }
+}
+
+/* @font-face {
+  font-family: 'Appleii';
+  src: url('/fonts/Appleii.ttf') format('truetype');
 }
 :root {
-  font-family: 'appleii';
+  font-family: 'Appleii';
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -42,7 +88,7 @@ h1 {
   line-height: 1.1;
 }
 
-/* button {
+button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -59,7 +105,7 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-} */
+} 
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -69,4 +115,4 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-}
+} */

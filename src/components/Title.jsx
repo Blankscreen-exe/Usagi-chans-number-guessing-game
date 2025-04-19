@@ -6,7 +6,7 @@ import titletext from '/title-text.png';
 
 export default function Title() {
     return (
-        <div className="title">
+        <div className="flex justify-center">
             <img src={titletext} />
         </div>
     )

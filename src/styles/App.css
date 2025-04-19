@@ -1,4 +1,4 @@
-
+/* 
 @import url("./avatar.css");
 @import url("./iobox.css");
 @import url("./navbar.css");
@@ -25,7 +25,7 @@
   text-align: center;
 }
 
-/* general font styles */
+general font styles 
 .highlight {
   color: orangered;
   font-weight: bold;
@@ -39,4 +39,4 @@
 .data-field {
   font-size: 17pt;
   color:rgb(255, 98, 0);
-}
+} */
