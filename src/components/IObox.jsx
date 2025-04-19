@@ -82,7 +82,7 @@ export default function IObox(props) {
     return (
         <div className="relative text-[15pt]">
             <img src={titlebg} />
-            <div className="absolute top-1/2 left-1/2 min-[800px] -translate-1/2 text-center">
+            <div className="absolute top-1/2 left-1/2 min-w-[800px] -translate-1/2 text-center">
                 {ioToShow}
             </div>
         </div>

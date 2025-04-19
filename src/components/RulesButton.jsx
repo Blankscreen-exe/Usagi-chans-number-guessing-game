@@ -14,7 +14,7 @@ export default function RulesButton() {
                     <img src={titlebg} />
                     <div className="absolute top-1/2 left-1/2 min-w-[800px] -translate-1/2 text-center">
                         <div className="text-left">
-                            <h2 className="font-[yoster] font-bold text-[24pt] text-[#6e1b1b]">Da Rules:</h2>
+                            <h2 className="font-[yoster] font-bold text-[24pt] text-[#6e1b1b] mb-7">Da Rules:</h2>
                             <ul className="pl-0 list-none">
                                 <li className="before:content-['🥕_'] text-[11pt] text-black">I'll show you a <span className="text-orange-600 font-bold underline">number</span> between 0-9</li>
                                 <li className="before:content-['🥕_'] text-[11pt] text-black">Just <span className="text-orange-600 font-bold underline">guess</span> if the next number is <span className="highlight">larger</span> or <span className="highlight">smaller</span>.</li>

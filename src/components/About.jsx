@@ -15,7 +15,7 @@ export default function RulesButton() {
                     <img src={titlebg} className="popup-bg" />
                     <div className="absolute top-1/2 left-1/2 min-w-[800px] -translate-1/2 text-center">
                         <div className="text-left">
-                            <h2 className="font-[yoster] font-bold text-[24pt] text-[#6e1b1b]">About:</h2>
+                            <h2 className="font-[yoster] font-bold text-[24pt] text-[#6e1b1b] mb-7">About:</h2>
                             <ul className="pl-0 list-none">
                                 <li className="before:content-['🥕_'] text-[11pt] text-black">About stuff goes here</li>
                             </ul>

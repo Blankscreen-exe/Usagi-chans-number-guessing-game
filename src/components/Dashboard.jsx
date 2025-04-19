@@ -11,7 +11,7 @@ export default function Dashboard(props) {
                 <div className="relative">
                     <div className="absolute top-1/2 left-1/2 min-w-[800px] -translate-1/2 text-center">
                         <div className="text-white">
-                            <h2>This section is currently under development. But nothing's stopping you from playing the game so why not have a go at it since you are here?</h2>
+                            <h2 className="text-[1.5em]">This section is currently under development. But nothing's stopping you from playing the game so why not have a go at it since you are here?</h2>
 
                         </div>
                     </div>

@@ -72,9 +72,9 @@ export default function Result(props) {
         <div>
             <span className='font-[yoster] text-[19pt] text-[brown]'>{result}</span><br />
             <span className='text-[15px]'>You won a <span className='text-orange-600 font-bold underline'>{reward.text}</span></span><br />
-            <span><img src={reward.img} className="w-[75px]" /></span><br />
+            <span><img src={reward.img} className="w-[75px] inline" /></span><br />
             <span className='text-[15px]'>{reward.description}</span><br />
-            <hr />
+            <hr className='mt-3 mb-4 [border-style:inset] border-1' />
             {/* <p className='save-record-text'>Press <span className='highlight'>Record</span> to save your name on my roster</p> */}
             <p>
                 {/* <input name="name" className='name-input-box' type="text" placeholder='Enter your name'/>

@@ -64,7 +64,7 @@ export default function Avatar(props) {
         <div className="flex justify-center pt-2.5">
             <span className="text-center w-[600px] z-0 bg-[url('/speechbubble.png')] bg-no-repeat text-[#666666]">
                 {/* <img src={speechBubble} className="speech-bubble"/> */}
-                <p className="mt-[5%] ml-auto mr-auto pl-[5%] pr-[9%] w-[480px] z-[1]">{dialogue}</p>
+                <p className="mt-[5%] ml-auto mr-auto px-[4%] w-[480px] z-[1]">{dialogue}</p>
             </span>
             <img src={image} />
         </div>
