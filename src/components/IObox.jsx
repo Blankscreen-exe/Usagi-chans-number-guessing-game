@@ -1,7 +1,7 @@
 //IO box
 //This module is dedicated to control of the game state and show different screen based on the game state Hook.
 //This operation of changing visuals is only performed within this module
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 import AnswerButtons from "./AnswerButtons";
 import Reveal from "./Reveal";
@@ -17,10 +17,10 @@ export default function IObox(props) {
 
     // showing content based on game state
     let ioToShow = <div></div>
-    switch (props.gameState){
+    switch (props.gameState) {
         case 0: // start screen
             ioToShow = (
-                <GameStartButton 
+                <GameStartButton
                     setGameState={props.setGameState}
                     genNum={props.genNum}
                 />)
@@ -29,7 +29,7 @@ export default function IObox(props) {
         case 1: // game accepting user response
             ioToShow = (
                 <div className="answer-button-container">
-                    <AnswerButtons 
+                    <AnswerButtons
                         setGameState={props.setGameState}
                         genNum={props.genNum}
                         numbers={props.numbers}
@@ -40,7 +40,7 @@ export default function IObox(props) {
 
         case 2: // reveal next number
             ioToShow = (
-                <Reveal 
+                <Reveal
                     setGameState={props.setGameState}
                     answer={props.answer}
                     numbers={props.numbers}
@@ -65,7 +65,7 @@ export default function IObox(props) {
                     setDisplayHint={props.setDisplayHint}
                 />)
             break;
-        
+
         case 4: // result screen 
             ioToShow = (
                 <Result
@@ -80,9 +80,9 @@ export default function IObox(props) {
     }
 
     return (
-        <div className="iobox">
-            <img src={titlebg} className="io-bg"/>
-            <div className="io-content">
+        <div className="relative text-[15pt]">
+            <img src={titlebg} className="io-bg" />
+            <div className="absolute top-1/2 left-1/2 min-[800px] -translate-1/2 text-center">
                 {ioToShow}
             </div>
         </div>
