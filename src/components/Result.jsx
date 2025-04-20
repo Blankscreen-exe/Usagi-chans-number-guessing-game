@@ -64,22 +64,22 @@ export default function Result(props) {
         props.setGameState(0)
     }
 
-    function saveDaRecord () {
+    function saveDaRecord() {
         //TODO: function to save html by "html-to-img" pack
     }
 
     return (
         <div>
-            <span className='header-field'>{result}</span><br/>
-            <span className='reward-header-field'>You won a <span className='highlight'>{reward.text}</span></span><br/>
-            <span><img src={reward.img} className="reward-image" /></span><br/>
-            <span className='reward-description'>{reward.description}</span><br/>
-            <hr/>
+            <span className='font-[yoster] text-[19pt] text-[brown]'>{result}</span><br />
+            <span className='text-[15px]'>You won a <span className='text-orange-600 font-bold underline'>{reward.text}</span></span><br />
+            <span><img src={reward.img} className="w-[75px] inline" /></span><br />
+            <span className='text-[15px]'>{reward.description}</span><br />
+            <hr className='mt-3 mb-4 [border-style:inset] border-1' />
             {/* <p className='save-record-text'>Press <span className='highlight'>Record</span> to save your name on my roster</p> */}
             <p>
                 {/* <input name="name" className='name-input-box' type="text" placeholder='Enter your name'/>
                 <button className="io-button save-record-button">🥕 Save Record !</button> */}
-                <button className="io-button play-again-button" onClick={changeState}>🥕 Play Again ? 🥕</button>
+                <button className="border-4 border-[#e12407] btn-shadow p-[5px] ml-2.5 text-[14pt] font-bold font-[yoster] bg-[#ffd8d2] cursor-pointer text-[#e12407] hover:bg-[#ff7a65] hover:border-[#d42a10] hover:text-white focus:outline-0 focus-visible:outline-0" onClick={changeState}>🥕 Play Again ? 🥕</button>
 
             </p>
         </div>
