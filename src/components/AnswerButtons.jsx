@@ -12,13 +12,10 @@ export default function AnswerButtons(props) {
 
         switch (event.target.name) {
             case "smaller":
-                console.log("You clicked smaller")
                 break;
             case "larger":
-                console.log("You clicked larger")
                 break;
             default:
-                console.log("You didnt click anything")
 
         }
     }
