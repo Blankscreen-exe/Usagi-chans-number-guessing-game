@@ -108,7 +108,6 @@ export default function Reveal(props) {
                 break;
 
             default:
-                console.log("Error in Check Answer")
         }
 
         //changing game state (sending to check answer)

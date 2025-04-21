@@ -56,7 +56,6 @@ export default function Avatar(props) {
             image = props.playerData.points > 5 ? usagi_happy : usagi_sad
             break;
         default:
-            console.log("Error fetching dialogue")
             break;
     }
 
