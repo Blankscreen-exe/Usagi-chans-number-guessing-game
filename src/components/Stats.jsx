@@ -15,8 +15,8 @@ export default function Stats(props) {
   const probabilityOfSmaller = ((10 - (10 - currNumber)) * 10)
 
   return (
-    <span>
-      <div className='flex justify-around py-5 px-0'>
+    <span className='flex justify-center'>
+      <div className='flex flex-col justify-around py-5 px-0 text-left w-max gap-y-1.5'>
         <span>
           <span className='font-[yoster] text-[19pt] text-[brown]'>Turns: </span>
           <span className='text-[17pt] text-[#ff6200]'>{props.playerData.turns}</span>
