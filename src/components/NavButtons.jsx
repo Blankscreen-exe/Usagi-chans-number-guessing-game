@@ -9,7 +9,7 @@ import About from './About';
 export default function NavButtons() {
 
     return (
-        <div className='flex justify-around py-[15px] nav-border bg-[#d2bb8c] mt-1.5'>
+        <div className='flex flex-col justify-center items-center gap-y-16 nav-border absolute z-10 inset-0 bg-[#d2bb8c] md:mt-1.5 md:py-[15px]'>
             <RulesButton />
             <Dashboard />
             <About />

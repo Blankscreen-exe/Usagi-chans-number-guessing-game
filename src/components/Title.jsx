@@ -7,7 +7,7 @@ import titletext from '/title-text.png';
 export default function Title() {
     return (
         <div className="flex justify-center">
-            <img src={titletext} />
+            <img src={titletext} className="w-full" />
         </div>
     )
 }
