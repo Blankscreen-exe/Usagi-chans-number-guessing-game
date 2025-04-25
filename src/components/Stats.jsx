@@ -15,7 +15,7 @@ export default function Stats(props) {
   const probabilityOfSmaller = ((10 - (10 - currNumber)) * 10)
 
   return (
-    <span className='flex justify-center'>
+    <span className='flex justify-center flex-col items-center md:flex-row'>
       <div className='flex flex-col justify-around py-5 px-0 text-left w-max gap-y-1.5'>
         <span>
           <span className='font-[yoster] text-[19pt] text-[brown]'>Turns: </span>
@@ -39,14 +39,14 @@ export default function Stats(props) {
       </div>
       {props.displayHint &&
         props.gameState === 1 &&
-        <div className='flex justify-around py-[5px] px-0 my-[15px] mx-auto hint-container-border bg-[#d2bb8c]'>
+        <div className='flex flex-col gap-y-2 justify-around py-[5px] px-0 my-[15px] mx-auto hint-container-border bg-[#d2bb8c] md:flex-row'>
           <span>
-            <span className='font-[yoster] text-[19pt] text-[brown]'>Chance of "Smaller" = </span>
-            <span className='text-[17pt]'>{probabilityOfSmaller} %</span>
+            <span className='font-[yoster] text-[14pt] text-[brown] md:text-[19pt]'>Chance of "Smaller" = </span>
+            <span className='text-[12pt md:text-[17pt]'>{probabilityOfSmaller} %</span>
           </span>
           <span>
-            <span className='font-[yoster] text-[19pt] text-[brown]'>Chance of "Larger" = </span>
-            <span className='text-[17pt]'>{probabilityOfLarger} %</span>
+            <span className='font-[yoster] text-[14pt] text-[brown] md:text-[19pt]'>Chance of "Larger" = </span>
+            <span className='text-[12pt md:text-[17pt]'>{probabilityOfLarger} %</span>
           </span>
         </div>}
     </span>
