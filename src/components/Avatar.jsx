@@ -66,7 +66,7 @@ export default function Avatar(props) {
                     <source media="(min-width: 768px)" srcSet="/speechbubble.png" />
                     <img src="/speechbubble-mobile.png" alt="Speech buble" className="w-full h-72 max-w-80 md:h-56 md:max-w-none lg:h-auto" />
                 </picture>
-                <p className="absolute text-[.8rem] leading-6 max-w-72 top-0 mt-8 ml-auto mr-auto pl-6 pr-4 z-[1] md:max-w-[430px] md:mt-6 md:pl-8 md:text-[1rem] lg:max-w-[550px]">{dialogue}</p>
+                <p className="absolute text-[.8rem] leading-6 max-w-72 top-0 mt-8 ml-auto mr-auto pl-8 pr-6 z-[1] md:max-w-[430px] md:mt-6 md:pl-8 md:pr-4 md:text-[1rem] lg:max-w-[550px]">{dialogue}</p>
             </span>
             <img src={image} />
         </div>
