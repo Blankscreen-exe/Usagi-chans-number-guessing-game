@@ -12,7 +12,7 @@ export default function RulesButton() {
             <div>
                 <div className="relative">
                     <img src={titlebg} className="h-[38rem] object-fill w-[90vw] max-w-96" />
-                    <div className="absolute top-1/2 -translate-y-1/2 text-center px-8 md:left-1/2 md:min-w-[800px] md:-translate-1/2">
+                    <div className="absolute top-1/2 -translate-y-1/2 text-center px-8 lg:left-1/2 lg:-translate-1/2 lg:min-w-[800px]">
                         <div className="text-left">
                             <h2 className="font-[yoster] font-bold text-[22pt] text-[#6e1b1b] mb-4 md:mb-7 md:text-[24pt]">Da Rules:</h2>
                             <ul className="pl-0 list-none max-w-[340px]">

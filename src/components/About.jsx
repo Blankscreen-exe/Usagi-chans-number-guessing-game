@@ -13,7 +13,7 @@ export default function RulesButton() {
             <div className="popup-shadow">
                 <div className="relative">
                     <img src={titlebg} className="popup-bg w-[90vw] max-w-96 h-36" />
-                    <div className="absolute top-1/2 -translate-y-1/2 text-center px-8 md:-translate-1/2 md:left-1/2 md:min-w-[800px]">
+                    <div className="absolute top-1/2 -translate-y-1/2 text-center px-8 lg:-translate-1/2 lg:left-1/2 lg:min-w-[800px]">
                         <div className="text-left">
                             <h2 className="font-[yoster] font-bold text-[22pt] md:text-[24pt] text-[#6e1b1b] mb-4 md:mb-7">About:</h2>
                             <ul className="pl-0 list-none">
