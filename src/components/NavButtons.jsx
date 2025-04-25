@@ -13,6 +13,13 @@ export default function NavButtons(props) {
         transform: 'translateX(100%)',
         transition: 'transform 0.5s ease-in-out'
     });
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => setWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     // Shows the menu when user clicks the hamburger icon and hides it when the close icon is clicked
     useEffect(() => {
@@ -38,8 +45,8 @@ export default function NavButtons(props) {
     }
 
     return (
-        <div style={translate} className='flex flex-col justify-center items-center gap-y-16 nav-border absolute z-10 inset-0 bg-[#d2bb8c] md:gap-y-26 lg:mt-1.5 lg:py-[15px]'>
-            <button className='absolute top-6 right-8 cursor-pointer' onClick={() => props.showMenu(false)}>
+        <div style={width > 1024 ? {} : translate} className='flex flex-col justify-center items-center gap-y-16 nav-border absolute z-10 inset-0 bg-[#d2bb8c] md:gap-y-26 lg:flex-row lg:justify-around lg:static lg:mt-1.5 lg:py-[15px]'>
+            <button className='absolute top-6 right-8 cursor-pointer lg:hidden' onClick={() => props.showMenu(false)}>
                 <CloseIcon sx={closeMenuStyle} className='text-[brown] hover:text-[#d42a10]' />
             </button>
             <RulesButton />

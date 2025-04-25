@@ -58,7 +58,7 @@ function App() {
 
   return (
     <div className="App">
-      <button className='absolute top-6 right-10 cursor-pointer' onClick={() => setShow(true)}>
+      <button className='absolute top-6 right-10 cursor-pointer lg:hidden' onClick={() => setShow(true)}>
         <MenuIcon sx={hamMenuStyle} className='text-[brown] hover:text-[#d42a10]' />
       </button>
       <Title />
