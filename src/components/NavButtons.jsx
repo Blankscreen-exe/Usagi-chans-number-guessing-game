@@ -38,7 +38,7 @@ export default function NavButtons(props) {
     }
 
     return (
-        <div style={translate} className='flex flex-col justify-center items-center gap-y-16 nav-border absolute z-10 inset-0 bg-[#d2bb8c] md:mt-1.5 md:py-[15px]'>
+        <div style={translate} className='flex flex-col justify-center items-center gap-y-16 nav-border absolute z-10 inset-0 bg-[#d2bb8c] md:gap-y-26 lg:mt-1.5 lg:py-[15px]'>
             <button className='absolute top-6 right-8 cursor-pointer' onClick={() => props.showMenu(false)}>
                 <CloseIcon sx={closeMenuStyle} className='text-[brown] hover:text-[#d42a10]' />
             </button>
