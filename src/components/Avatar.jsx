@@ -60,10 +60,13 @@ export default function Avatar(props) {
     }
 
     return (
-        <div className="flex justify-center pt-2.5">
-            <span className="text-center w-[600px] z-0 bg-[url('/speechbubble.png')] bg-no-repeat text-[#666666]">
-                {/* <img src={speechBubble} className="speech-bubble"/> */}
-                <p className="mt-[5%] ml-auto mr-auto px-[4%] w-[480px] z-[1]">{dialogue}</p>
+        <div className="flex flex-col justify-center items-center pt-2.5 gap-y-3 md:gap-y-0 md:flex-row md:items-start">
+            <span className="flex flex-col items-center w-full relative text-center z-0 text-[#666666] md:inline md:w-[480px] lg:w-[600px]">
+                <picture>
+                    <source media="(min-width: 768px)" srcSet="/speechbubble.png" />
+                    <img src="/speechbubble-mobile.png" alt="Speech buble" className="w-full h-72 max-w-80 md:h-56 md:max-w-none lg:h-auto" />
+                </picture>
+                <p className="absolute text-[.8rem] leading-6 max-w-72 top-0 mt-8 ml-auto mr-auto pl-6 pr-4 z-[1] md:max-w-[430px] md:mt-6 md:pl-8 md:text-[1rem] lg:max-w-[550px]">{dialogue}</p>
             </span>
             <img src={image} />
         </div>
