@@ -80,9 +80,9 @@ export default function IObox(props) {
     }
 
     return (
-        <div className="relative text-[14pt] min-h-[395px] max-w-[460px] mx-auto md:text-[15pt]">
-            <img src={titlebg} className="h-[395px] object-fill" />
-            <div className="absolute top-1/2 left-1/2 w-[78vw] max-w-[360px] md:min-w-[800px] -translate-1/2 text-center">
+        <div className="relative text-[14pt] min-h-[395px] max-w-[460px] mx-auto md:text-[17pt] md:min-h-auto md:max-w-3xl md:my-4">
+            <img src={titlebg} className="h-[395px] object-fill md:h-96 lg:h-auto" />
+            <div className="absolute top-1/2 left-1/2 w-[78vw] max-w-[360px] -translate-1/2 text-center md:min-w-[36rem] md:w-auto lg:min-w-[800px]">
                 {ioToShow}
             </div>
         </div>
